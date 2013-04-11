@@ -1,4 +1,9 @@
 $(function(){
+  var rgb_backgrounds = new Array(
+    '#4682B4',
+    '#436EEE'
+  );
+
   $('.header-banner').slidesjs({
     width: 950,
     height: 380,
@@ -23,8 +28,12 @@ $(function(){
     },
     callback: {
         start: function(number){
-          //console.log("start" + number);
-        },
+          $('.header-banner-wrapper').css('background-color', rgb_backgrounds[number-1]);
+        }
     }
   });
+
+  (function render(){
+    $('.header-banner-wrapper').css('background-color', rgb_backgrounds[0]);
+  })();
 });
