@@ -1,7 +1,10 @@
 $(function(){
   var rgb_backgrounds = new Array(
-    '#4682B4',
-    '#436EEE'
+    '#2f578b',
+    '#488abe',
+    '#018ec3',
+    '#03393b',
+    '#f0f7fd'
   );
 
   $('.header-banner').slidesjs({
@@ -11,14 +14,9 @@ $(function(){
       auto: true,
       active: true,
       effect: 'fade',
-      interval: 2000,
+      interval: 3000,
       pauseOnHover: true,
       restartDelay: 1000
-    },
-    effect: {
-      fade: {
-        speed: 800
-      }
     },
     navigation: {
       effect: 'fade'
@@ -28,7 +26,13 @@ $(function(){
     },
     callback: {
         start: function(number){
-          $('.header-banner-wrapper').css('background-color', rgb_backgrounds[number-1]);
+          var index;
+          if(number === rgb_backgrounds.length){
+            number = 0;
+          }
+          index = number;
+          console.log("fade " + index);
+          $('.header-banner-wrapper').css('background-color', rgb_backgrounds[index]);
         }
     }
   });
