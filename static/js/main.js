@@ -31,7 +31,11 @@ $(function(){
             number = 0;
           }
           index = number;
+<<<<<<< HEAD
           console.log("fade " + index);
+=======
+          //console.log("fade " + index);
+>>>>>>> gh-pages
           $('.header-banner-wrapper').css('background-color', rgb_backgrounds[index]);
         }
     }
