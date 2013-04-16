@@ -9,20 +9,21 @@ $(function(){
 
   $('.header-banner').slidesjs({
     width: 950,
-    height: 380,
+    height: 360,
     play: {
       auto: true,
       active: true,
-      effect: 'fade',
+      effect: 'slide',
       interval: 3000,
       pauseOnHover: true,
       restartDelay: 1000
     },
     navigation: {
-      effect: 'fade'
+      effect: 'slide'
     },
     pagination: {
-      effect: 'fade'
+      effect: 'slide',
+      autoResume: true
     },
     callback: {
         start: function(number){
@@ -31,12 +32,10 @@ $(function(){
             number = 0;
           }
           index = number;
-<<<<<<< HEAD
           console.log("fade " + index);
-=======
-          //console.log("fade " + index);
->>>>>>> gh-pages
           $('.header-banner-wrapper').css('background-color', rgb_backgrounds[index]);
+        },
+        complete: function(number){
         }
     }
   });

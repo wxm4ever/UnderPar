@@ -1,4 +1,5 @@
 // layout.less
+@page_width: 1000px;
 
 .page_wrapper {
   width: 100%;
@@ -8,7 +9,7 @@
     background-image: url('../img/top_bg.jpg');
 
     .header-logo {
-      width: 950px;
+      width: @page_width;
       margin: 0 auto;
 
       .logo {
@@ -29,7 +30,7 @@
     background: url('../img/nav.jpg') repeat-x;
   
     .header-menu {
-      width: 950px;
+      width: @page_width;
       margin: 0 auto;
       text-align: center;
 
@@ -66,11 +67,16 @@
     height: 380px;
 
     .header-banner {
-      width: 950px;
+      width: @page_width;
       height: 380px;
       margin: 0 auto;
       display: none;
       overflow: visible !important;
+    
+      img {
+        width: @page_width;
+        height: 380px;   
+      }
     }
   }
 
@@ -80,12 +86,12 @@
     background-color: #f3f3f3;
 
     .content {
-      width: 950px;
+      width: @page_width;
       margin: 0 auto;
       padding-bottom: 10px;
 
       .content-row1 {
-        width: 950px;
+        width: @page_width;
         height: 320px;
         background: url(../img/bg02.jpg) repeat;
         padding-bottom: 10px;
@@ -132,7 +138,7 @@
 
       .content-row2 {
         vertical-align: middle;
-        width: 957px;
+        width: @page_width;
         height: 200px;
 
         ul.thumbnails {
@@ -146,7 +152,8 @@
             text-align: -webkit-match-parent;
             list-style: none;
             background: url(../img/newsbg01.png);
-            padding: 7px 7px 4px 7px;
+            padding: 11px 11px 11px 11px;
+            margin-left: 2px;
             margin-right: 5px;
 
             img {
@@ -164,7 +171,7 @@
     background: url(../img/footbg.jpg) repeat-x;
 
     .footer {
-      width: 950px;
+      width: @page_width;
       margin: 0 auto;
       padding-left: 40px;
       line-height: 24px;
