@@ -80,6 +80,25 @@
     }
   }
 
+  .site-banner-wrapper {
+    height: 194;
+
+    .site-banner {
+      width: @page_width;
+      height: 194px;
+      margin: 0 auto;
+
+      img {
+        width: @page_width;
+        height: 194px;   
+      }
+    }
+  }
+  
+  .content-faq {
+    padding-top: 0px !important;
+  }
+
   .content-wrapper {
     padding-top: 25px;
     width: 100%;
@@ -89,6 +108,30 @@
       width: @page_width;
       margin: 0 auto;
       padding-bottom: 10px;
+
+      .content {
+        width: @page_width;
+        padding-top: 20px;
+        
+        .right-content {
+          .faq-item {
+            .faq-item-title {
+              background-color: #FFA07A;
+              color: #0A0A0A;
+              font-size: 10pt;
+
+              padding: 5px;
+            }
+
+            .faq-item-content {
+              padding-top: 10px;
+              padding-bottom: 10px;
+              font-size: 14pt;
+              text-indent: 2em;
+            }
+          }
+        }
+      }
 
       .content-row1 {
         width: @page_width;

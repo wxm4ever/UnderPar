@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Test</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="static/css/main.css">
+</head>
+<body>
+<div class="page_wrapper">
+  <div class="header-logo-wrapper">
+    <div class="header-logo">
+      <div class="float_left logo"><a href="#"><img src="static/img/logo.png" alt="loading logo"></a></div>
+      <div class="float_right contact_us"><a href="#"><img src="static/img/tel01.png" alt="loading img"></a></div>
+    </div>
+  </div>
+  <div class="header-menu-wrapper">
+    <div class="header-menu">
+      <ul>
+        <li class="menu-item-clear">&nbsp;</li>
+        <li class="menu-item"><a href="#">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+        <li class="menu-item"><a href="#">公司简介</a></li>
+        <li class="menu-item"><a href="#">信息中心</a></li>
+        <li class="menu-item"><a href="#">研发中心</a></li>
+        <li class="menu-item"><a href="#">产品中心</a></li>
+        <li class="menu-item"><a href="#">客户留言</a></li>
+        <li class="menu-item"><a href="#">产品视频</a></li>
+        <li class="menu-item"><a href="#">联系我们</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="site-banner-wrapper">
+    <div class="site-banner">
+      <img src="static/img/site.jpg">
+    </div>
+  </div>
+  <div class="content-wrapper content-faq">
+    <div class="content">
+      <div class="content">
+        <div class="left-menu">
+          <!-- 菜单 -->
+        </div>
+        <div class="right-content">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-wrapper">
+    <div class="footer">
+      <p class="grey">合作网站:<a href="#">Site1</a><a href="#">Site2</a></p>
+      <p>Copyright © HIT. All Rights Reserved</p>
+      <p>软件制作</p>
+    </div>
+  </div>
+</div>
+<script src="static/js/jquery-1.9.1.min.js"></script>
+<script src="static/js/underscore-min.js"></script>
+<script type="text/html" id="faq-item-template">
+  <div class="faq-item">
+    <div class="faq-item-title"><span><%= faq_title %></span></div>
+    <div class="faq-item-content"><%= faq_content %></div>
+  </div>         
+</script>
+<script src="static/js/data.js"></script>
+<script src="static/js/faq.js"></script>
+</body>
+</html>
