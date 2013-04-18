@@ -42,7 +42,7 @@
       .menu-item {
         float: left;
         list-style-type: none;
-        width: 151px;
+        width: 110px;
         height: 43px;
         text-align: center;
 
@@ -96,25 +96,45 @@
         background: url(../img/bg02.jpg) repeat;
         padding-bottom: 10px;
 
-        .about_us {
+        .faq {
           width: 535px;
           height: inherit;
 
-          .about_us_title {
+          .faq_title {
             width: 100%;
             padding-top: 10px;
             padding-left: 20px;
             img { width: 200px; height: 32px; }
           }
 
-          .about_us_content {
+          .faq_content {
             height: 290px;
-            padding-left: 100px;
-            pre {
-              width: 100%;
-              height: 270px;
-              padding-top: 20px;
-              line-height: 2em;
+            padding-left: 30px;
+
+
+            .faq_col {
+              float: left;
+              width: 50%;
+
+              ul {
+                width: 100%;
+                padding-top: 40px;
+
+                li {
+                  list-style: square;
+                  padding: 3px;
+
+                  a {
+                    color: black;
+                    font-size: 9pt;
+                    text-decoration: none;
+                  }
+
+                  a:hover {
+                    text-decoration: underline;
+                  }
+                }
+              }
             }
           }
         }
