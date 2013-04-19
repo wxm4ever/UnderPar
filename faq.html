@@ -17,7 +17,7 @@
     <div class="header-menu">
       <ul>
         <li class="menu-item-clear">&nbsp;</li>
-        <li class="menu-item"><a href="#">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+        <li class="menu-item"><a href="index.html">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
         <li class="menu-item"><a href="#">公司简介</a></li>
         <li class="menu-item"><a href="#">信息中心</a></li>
         <li class="menu-item"><a href="#">研发中心</a></li>
@@ -56,7 +56,7 @@
 <script src="static/js/underscore-min.js"></script>
 <script type="text/html" id="faq-item-template">
   <div class="faq-item">
-    <div class="faq-item-title"><span><%= faq_title %></span></div>
+    <div class="faq-item-title"><span><a name="<%= anchor %>"><%= faq_title %></a></span></div>
     <div class="faq-item-content"><%= faq_content %></div>
   </div>         
 </script>
