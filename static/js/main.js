@@ -32,10 +32,7 @@ $(function(){
             number = 0;
           }
           index = number;
-          console.log("fade " + index);
           $('.header-banner-wrapper').css('background-color', rgb_backgrounds[index]);
-        },
-        complete: function(number){
         }
     }
   });

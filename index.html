@@ -101,6 +101,42 @@
 </div>
 <script src="static/js/jquery-1.9.1.min.js"></script>
 <script src="static/js/jquery.slides.js"></script>
+<script src="static/js/underscore-min.js"></script>
+<script type="text/html" id="li-thumb">
+  <li class="thumb"><img src="static/underpar/<%= file %>" alt="200x200" /></li>
+</script>
 <script src="static/js/main.js"></script>
+<script>
+$(function(){
+  var imgs = [
+    ['1.jpg', '2.jpg', '3.jpg', '4.jpg'],
+    ['5.jpg', '6.jpg', '7.jpg', '8.jpg'],
+    ['9.jpg', '10.jpg', '11.jpg', '12.jpg']
+  ];
+  var index = 1;
+  var change = function(){
+    var ul_thumbnails = $('ul.thumbnails').html("");
+    var li_thumb_template = _.template($('#li-thumb').html());
+    index = index>2 ? 0 : index;
+    var loop_files = imgs[index];
+
+    for(var k in loop_files){
+      var v = loop_files[k];
+      $(ul_thumbnails).append(li_thumb_template({file: v}));
+    }
+    index += 1;
+  };
+  var preLoad = function(){
+    for(var i in imgs){
+      for(var j in imgs[i]){
+        new Image().src = 'static/underpar/'+imgs[i][j];
+      }
+    }
+  };
+
+  preLoad();
+  setInterval(change, 3000);
+});
+</script>
 </body>
 </html>
